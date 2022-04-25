@@ -1,10 +1,11 @@
 #!/data/data/com.termux/files/usr/bin/bash
-pkg install -y x11-repo
-pkg update -y
+cd
+echo "deb https://packages.termux.org/apt/termux-main stable main" >> $PREFIX/etc/apt/sources.list
+echo "deb https://packages.termux.org/apt/termux-x11/ x11 main" >> $PREFIX/etc/apt/sources.list
+pkg update
 pkg install -y tigervnc openbox pypanel xorg-xsetroot
 mkdir .vnc
 echo 'openbox-session &' >> ~/.vnc/xstartup
-echo 'xsetroot -solid gray' >> ~/.config/openbox/autostart
-echo 'pypanel &' >> ~/.config/openbox/autostart
+chmod +x ~/.vnc/xstartup
 export DISPLAY=":1"
 vncserver -localhost
