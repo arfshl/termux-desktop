@@ -1,8 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/sh
+echo "Termux GUI installer (Fluxbox)"
 cd
-echo "deb https://packages.termux.org/apt/termux-main stable main" >> $PREFIX/etc/apt/sources.list
-echo "deb https://packages.termux.org/apt/termux-x11/ x11 main" >> $PREFIX/etc/apt/sources.list
-pkg update 
+pkg update
 pkg install -y tigervnc fluxbox
 mkdir .vnc
 echo '#!/data/data/com.termux/files/usr/bin/sh' >> ~/.vnc/xstartup
