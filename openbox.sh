@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
+echo "Termux GUI installer (Openbox)"
 cd
-echo "deb https://packages.termux.org/apt/termux-main stable main" >> $PREFIX/etc/apt/sources.list
-echo "deb https://packages.termux.org/apt/termux-x11/ x11 main" >> $PREFIX/etc/apt/sources.list
+pkg install -y x11-repo
 pkg update
 pkg install -y tigervnc openbox pypanel xorg-xsetroot
 mkdir .vnc
