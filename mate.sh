@@ -1,12 +1,12 @@
 #!/data/data/com.termux/files/usr/bin/bash
+echo "Termux GUI installer (MATE)"
 cd
-echo "deb https://packages.termux.org/apt/termux-main stable main" >> $PREFIX/etc/apt/sources.list
-echo "deb https://packages.termux.org/apt/termux-x11/ x11 main" >> $PREFIX/etc/apt/sources.list
-pkg update 
-pkg install -y tigervnc mate-* marco mate-terminal netsurf
+pkg install -y x11-repo
+pkg update
+pkg install -y tigervnc mate-* marco mate-terminal
 mkdir .vnc
 echo '#!/data/data/com.termux/files/usr/bin/sh' >> ~/.vnc/xstartup
-echo 'mate-session &' >> ~/.vnc/xstartup
+echo 'xfce4-session &' >> ~/.vnc/xstartup
 chmod +x ~/.vnc/xstartup
 export DISPLAY=":1"
 vncserver -localhost
