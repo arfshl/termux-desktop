@@ -1,5 +1,5 @@
 #!/data/data/com.termux/files/usr/bin/bash
-echo "Termux GUI installer (XFCE)
+echo "Termux GUI installer (XFCE)"
 echo "cd
 echo "deb https://packages.termux.org/apt/termux-main stable main" >> $PREFIX/etc/apt/sources.list
 echo "deb https://packages.termux.org/apt/termux-x11/ x11 main" >> $PREFIX/etc/apt/sources.list
