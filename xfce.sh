@@ -1,9 +1,8 @@
 #!/data/data/com.termux/files/usr/bin/bash
 echo "Termux GUI installer (XFCE)"
 cd
-echo "deb https://packages.termux.org/apt/termux-main stable main" >> $PREFIX/etc/apt/sources.list
-echo "deb https://packages.termux.org/apt/termux-x11/ x11 main" >> $PREFIX/etc/apt/sources.list
-pkg update 
+pkg install -y x11-repo
+pkg update
 pkg install -y tigervnc xfce4 xfce4-terminal netsurf
 mkdir .vnc
 echo '#!/data/data/com.termux/files/usr/bin/sh' >> ~/.vnc/xstartup
