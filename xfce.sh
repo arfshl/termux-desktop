@@ -11,7 +11,7 @@ echo 'xfce4-session &' >> ~/.vnc/xstartup
 chmod +x ~/.vnc/xstartup
 export DISPLAY=":1"
 vncserver -localhost"
-read -n 1 -p "Press any key to install..."
+read -t 5 -n 1 -s -r -p "Press any key to continue"
 cd
 echo "deb https://packages.termux.org/apt/termux-main stable main" >> $PREFIX/etc/apt/sources.list
 echo "deb https://packages.termux.org/apt/termux-x11/ x11 main" >> $PREFIX/etc/apt/sources.list
