@@ -2,7 +2,6 @@
 echo "Termux GUI installer (LXQt)"
 cd
 pkg install -y x11-repo
-pkg update
 pkg install -y tigervnc lxqt otter-browser qterminal openbox
 mkdir .vnc
 echo '#!/data/data/com.termux/files/usr/bin/sh' >> ~/.vnc/xstartup
