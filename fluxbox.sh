@@ -1,8 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/sh
 echo "Termux GUI installer (Fluxbox)"
 cd
-pkg install x11-repo
-pkg update
+pkg install -y x11-repo
 pkg install -y tigervnc fluxbox
 mkdir .vnc
 echo '#!/data/data/com.termux/files/usr/bin/sh' >> ~/.vnc/xstartup
