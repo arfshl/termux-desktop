@@ -2,7 +2,6 @@
 echo "Termux GUI installer (XFCE)"
 cd
 pkg install -y x11-repo
-pkg update
 pkg install -y tigervnc xfce4 xfce4-terminal netsurf
 mkdir .vnc
 echo '#!/data/data/com.termux/files/usr/bin/sh' >> ~/.vnc/xstartup
