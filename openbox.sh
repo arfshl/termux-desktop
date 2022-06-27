@@ -9,4 +9,3 @@ echo '#!/data/data/com.termux/files/usr/bin/sh' >> ~/.vnc/xstartup
 echo 'openbox-session &' >> ~/.vnc/xstartup
 chmod +x ~/.vnc/xstartup
 export DISPLAY=":1"
-vncserver -localhost
