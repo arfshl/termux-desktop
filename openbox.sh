@@ -8,3 +8,6 @@ echo '#!/data/data/com.termux/files/usr/bin/sh' >> ~/.vnc/xstartup
 echo 'openbox-session &' >> ~/.vnc/xstartup
 chmod +x ~/.vnc/xstartup
 export DISPLAY=":1"
+echo 'To start VNC use vncserver -localhost command'
+echo 'To stop VNC use vncserver -kill :1 command'
+vncserver -localhost
