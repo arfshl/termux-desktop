@@ -1,5 +1,5 @@
-# termux-gui
-GUI installer for Termux
+# termux-desktop
+Desktop installer for Termux
 ## You Need
 - [VNC Viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android)
 ## Installation
@@ -22,5 +22,3 @@ GUI installer for Termux
 - Openbox
 
       pkg update && pkg install wget -y && wget https://github.com/arfshl/termux-gui/raw/main/openbox.sh -P ~/ && sh openbox.sh && rm openbox.sh
-
-## [Official installing guide](https://wiki.termux.com/wiki/Graphical_Environment)
