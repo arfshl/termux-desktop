@@ -1,5 +1,5 @@
 # termux-desktop
-Desktop installer for Termux
+Termux Graphical Environment installer
 ## You Need
 - [VNC Viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android)
 ## Installation
