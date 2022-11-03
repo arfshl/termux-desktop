@@ -1,9 +1,9 @@
 #!/data/data/com.termux/files/usr/bin/sh
-echo "Termux GUI installer (Fluxbox)"
-cd
-pkg install -y x11-repo
-pkg install -y tigervnc fluxbox
+echo "Installing Fluxbox..."
+apt install -y x11-repo
+apt install -y tigervnc fluxbox
 mkdir .vnc
+echo "Setting up VNC..."
 
 echo '#!/data/data/com.termux/files/usr/bin/sh
 fluxbox-generate_menu
