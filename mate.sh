@@ -3,7 +3,7 @@ echo "Installing MATE..."
 apt install -y x11-repo
 apt install -y tigervnc mate-* marco mate-terminal
 mkdir .vnc
-echo "Setting up VNC"
+echo "Setting up VNC..."
 
 echo '#!/data/data/com.termux/files/usr/bin/sh
 mate-session &' >> ~/.vnc/xstartup
