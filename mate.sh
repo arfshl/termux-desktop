@@ -1,9 +1,9 @@
 #!/data/data/com.termux/files/usr/bin/bash
-echo "Termux GUI installer (MATE)"
-cd
+echo "Installing MATE..."
 pkg install -y x11-repo
 pkg install -y tigervnc mate-* marco mate-terminal
 mkdir .vnc
+echo "Setting up VNC"
 
 echo '#!/data/data/com.termux/files/usr/bin/sh
 mate-session &' >> ~/.vnc/xstartup
