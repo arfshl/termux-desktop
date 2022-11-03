@@ -1,9 +1,9 @@
 #!/data/data/com.termux/files/usr/bin/bash
-echo "Termux GUI installer (Openbox)"
-cd
+echo "Installing Openbox..."
 pkg install -y x11-repo
 pkg install -y tigervnc openbox pypanel xorg-xsetroot
 mkdir .vnc
+echo "Setting up VNC..."
 
 echo '#!/data/data/com.termux/files/usr/bin/sh
 openbox-session &' >> ~/.vnc/xstartup
