@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 echo "Installing MATE..."
-pkg install -y x11-repo
-pkg install -y tigervnc mate-* marco mate-terminal
+apt install -y x11-repo
+apt install -y tigervnc mate-* marco mate-terminal
 mkdir .vnc
 echo "Setting up VNC"
 
