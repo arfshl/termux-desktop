@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 echo "Installing Openbox..."
-pkg install -y x11-repo
-pkg install -y tigervnc openbox pypanel xorg-xsetroot
+apt install -y x11-repo
+apt install -y tigervnc openbox pypanel xorg-xsetroot
 mkdir .vnc
 echo "Setting up VNC..."
 
