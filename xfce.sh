@@ -9,10 +9,10 @@ apt update
 apt upgrade -y -o Dpkg::Options::="--force-confold"
 
 # Install depedency
-apt install curl wget nano termux-x11 pulseaudio -y
+apt install curl wget nano -y
 
 # Install XFCE
-apt install -y tigervnc xfce4 xfce4-* termux-x11 xfce4-terminal dbus-x11
+apt install -y tigervnc xfce4 xfce4-* termux-x11 xfce4-terminal dbus-x11 pulseaudio
 
 cat <<'EOF' > /data/data/com.termux/files/usr/bin/xfce-x11
 #!/bin/sh
@@ -53,8 +53,8 @@ vncserver -kill :1' >> /data/data/com.termux/files/usr/bin/stopvnc
 chmod +x /data/data/com.termux/files/usr/bin/stopvnc
 
 echo '#!/data/data/com.termux/files/usr/bin/sh
-vncserver -kill :1
-vncserver :1' >> /data/data/com.termux/files/usr/bin/restartvnc
+stopvnc
+startvnc' >> /data/data/com.termux/files/usr/bin/restartvnc
 chmod +x /data/data/com.termux/files/usr/bin/restartvnc
 
 echo 'To start VNC use startvnc command'
