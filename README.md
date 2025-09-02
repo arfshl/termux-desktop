@@ -7,20 +7,28 @@ Termux Graphical Environment installer with preconfigured sound, VNC, and termux
 ## Installation
 - XFCE
 
-      apt update && apt dist-upgrade && curl -O https://github.com/arfshl/termux-desktop/raw/main/xfce.sh && sh xfce.sh && rm xfce.sh
+      curl -O https://github.com/arfshl/termux-desktop/raw/main/xfce.sh && sh xfce.sh && rm xfce.sh
 
 - MATE
  
-      apt update && apt dist-upgrade && curl -O https://github.com/arfshl/termux-desktop/raw/main/mate.sh && sh mate.sh && rm mate.sh
+      curl -O https://github.com/arfshl/termux-desktop/raw/main/mate.sh && sh mate.sh && rm mate.sh
 
 - LXQt
 
-      apt update && apt dist-upgrade && curl -O https://github.com/arfshl/termux-desktop/raw/main/lxqt.sh && sh lxqt.sh && rm lxqt.sh
+      curl -O https://github.com/arfshl/termux-desktop/raw/main/lxqt.sh && sh lxqt.sh && rm lxqt.sh
 
 - Fluxbox
 
-      apt update && apt dist-upgrade && curl -O https://github.com/arfshl/termux-desktop/raw/main/fluxbox.sh && sh fluxbox.sh && rm fluxbox.sh
+      curl -O https://github.com/arfshl/termux-desktop/raw/main/fluxbox.sh && sh fluxbox.sh && rm fluxbox.sh
 
 - Openbox
 
-      apt update && apt dist-upgrade && curl -O https://github.com/arfshl/termux-desktop/raw/main/openbox.sh && sh openbox.sh && rm openbox.sh
+      curl -O https://github.com/arfshl/termux-desktop/raw/main/openbox.sh && sh openbox.sh && rm openbox.sh
+
+- Install Firefox Browser, VLC Media Player, and utilities (Except LXQt)
+  
+      apt update && apt install firefox vlc thunderbird xarchiver atril eog galculator mousepad libheif webp-pixbuf-loader p7zip -y && apt clean
+  
+- Install Firefox Browser, VLC Media Player, and utilities (For LXQt)
+  
+      apt update && apt install firefox vlc thunderbird lxqt-archiver atril lximage-qt galculator featherpad libheif webp-pixbuf-loader p7zip -y && apt clean
