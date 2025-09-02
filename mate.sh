@@ -14,7 +14,7 @@ apt install curl wget nano -y
 # Install XFCE
 apt install -y tigervnc termux-x11 pulseaudio dbus-x11 mate-* marco mate-terminal caja 
 
-cat <<'EOF' > /data/data/com.termux/files/usr/bin/xfce-x11
+cat <<'EOF' > /data/data/com.termux/files/usr/bin/mate-x11
 #!/bin/sh
 LD_PRELOAD=/system/lib64/libskcodec.so
 pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1
