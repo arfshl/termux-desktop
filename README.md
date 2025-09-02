@@ -1,5 +1,7 @@
 # Termux Desktop
 Termux Graphical Environment installer with preconfigured sound, VNC, and termux-x11 startup script 
+
+Script is not Intended for multiple desktop environment installation
 ## You Need
 - [Termux App](https://github.com/termux/termux-app/releases)
 - [Termux:X11](https://github.com/termux/termux-x11/releases)
