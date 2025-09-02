@@ -11,8 +11,16 @@ apt upgrade -y -o Dpkg::Options::="--force-confold"
 # Install depedency
 apt install curl wget nano -y
 
-# Install XFCE
+# Install Openbox
 apt install -y tigervnc termux-x11 pulseaudio dbus-x11 openbox pypanel xorg-xsetroot
+
+mkdir -p ~/.config/openbox
+
+echo '# Make background gray.
+xsetroot -solid gray
+
+# Launch PyPanel.
+pypanel &' >> ~/.config/openbox/autostart
 
 cat <<'EOF' > /data/data/com.termux/files/usr/bin/openbox-x11
 #!/bin/sh
