@@ -11,7 +11,7 @@ apt upgrade -y -o Dpkg::Options::="--force-confold"
 # Install depedency
 apt install curl wget nano -y
 
-# Install XFCE
+# Install Fluxbox
 apt install -y tigervnc termux-x11 pulseaudio dbus-x11 fluxbox
 
 cat <<'EOF' > /data/data/com.termux/files/usr/bin/fluxbox-x11
