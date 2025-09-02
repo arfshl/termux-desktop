@@ -11,7 +11,7 @@ apt upgrade -y -o Dpkg::Options::="--force-confold"
 # Install depedency
 apt install curl wget nano -y
 
-# Install XFCE
+# Install MATE
 apt install -y tigervnc termux-x11 pulseaudio dbus-x11 mate-* marco mate-terminal caja 
 
 cat <<'EOF' > /data/data/com.termux/files/usr/bin/mate-x11
