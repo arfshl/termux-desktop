@@ -69,4 +69,5 @@ echo 'To start termux-x11 session use startx11 command'
 echo 'To start VNC use startvnc command'
 echo 'To stop VNC use stopvnc command'
 echo 'To restart VNC use restartvnc command'
+apt clean
 startvnc
