@@ -12,7 +12,7 @@ apt upgrade -y -o Dpkg::Options::="--force-confold"
 apt install curl wget nano -y
 
 # Install Openbox
-apt install -y tigervnc termux-x11 pulseaudio dbus-x11 openbox pypanel xorg-xsetroot
+apt install -y tigervnc termux-x11 pulseaudio dbus openbox pypanel xorg-xsetroot
 
 mkdir -p ~/.config/openbox
 
