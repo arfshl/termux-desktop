@@ -12,7 +12,7 @@ apt upgrade -y -o Dpkg::Options::="--force-confold"
 apt install curl wget nano -y
 
 # Install Fluxbox
-apt install -y tigervnc termux-x11 pulseaudio dbus-x11 fluxbox
+apt install -y tigervnc termux-x11 pulseaudio dbus fluxbox
 
 cat <<'EOF' > /data/data/com.termux/files/usr/bin/startx11
 #!/bin/sh
