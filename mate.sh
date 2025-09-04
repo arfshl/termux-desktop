@@ -12,7 +12,7 @@ apt upgrade -y -o Dpkg::Options::="--force-confold"
 apt install curl wget nano -y
 
 # Install MATE
-apt install -y tigervnc termux-x11 pulseaudio dbus-x11 mate-* marco mate-terminal caja 
+apt install -y tigervnc termux-x11 pulseaudio dbus mate-* marco mate-terminal caja 
 
 cat <<'EOF' > /data/data/com.termux/files/usr/bin/startx11
 #!/bin/sh
