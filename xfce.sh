@@ -12,7 +12,7 @@ apt upgrade -y -o Dpkg::Options::="--force-confold"
 apt install curl wget nano -y
 
 # Install XFCE
-apt install -y tigervnc xfce4 xfce4-* termux-x11 xfce4-terminal dbus-x11 pulseaudio
+apt install -y tigervnc xfce4 xfce4-* termux-x11 xfce4-terminal dbus pulseaudio
 
 cat <<'EOF' > /data/data/com.termux/files/usr/bin/startx11
 #!/bin/sh
