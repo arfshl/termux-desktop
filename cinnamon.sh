@@ -38,7 +38,7 @@ chmod 600 ~/.vnc/passwd
 echo '#!/data/data/com.termux/files/usr/bin/sh
 export PULSE_SERVER=127.0.0.1
 export DISPLAY=:1
-dbus-launch --exit-with-session mate-session' >> ~/.vnc/xstartup
+dbus-launch --exit-with-session cinnamon-session' >> ~/.vnc/xstartup
 chmod +x ~/.vnc/xstartup
 
 echo '#!/data/data/com.termux/files/usr/bin/sh
