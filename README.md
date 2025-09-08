@@ -19,6 +19,10 @@ Script is not Intended for multiple desktop environment installation
 
       curl -O https://github.com/arfshl/termux-desktop/raw/main/lxqt.sh && sh lxqt.sh && rm lxqt.sh
 
+- Cinnamon (Heavy)
+
+      curl -O https://github.com/arfshl/termux-desktop/raw/main/cinnamon.sh && sh cinnamon.sh && rm cinnamon.sh
+
 - Fluxbox
 
       curl -O https://github.com/arfshl/termux-desktop/raw/main/fluxbox.sh && sh fluxbox.sh && rm fluxbox.sh
