@@ -11,7 +11,7 @@ apt upgrade -y -o Dpkg::Options::="--force-confold"
 # Install depedency
 apt install curl wget nano -y
 
-# Install MATE
+# Install Cinnamon
 apt install -y tigervnc termux-x11 pulseaudio dbus cinnamon nemo mate-terminal
 
 cat <<'EOF' > /data/data/com.termux/files/usr/bin/startx11
