@@ -7,7 +7,7 @@ Supported Desktop Environment/Window Manager
 - Cinnamon (A bit slow)
 - LXQt (Sometimes the icons goes missing, `papirus-icon-theme` is installed automatically but you should configure it manually)
 
-If you want to install multiple desktop environment, now you can, but if you want to use VNC instead of Termux:X11 you need to edit `~/.vnc/xstartup` with this command: `nano ~/.vnc/xstartup`
+If you want to install multiple desktop environment, now you can. But if you want to use VNC instead of Termux:X11 you need to edit `~/.vnc/xstartup` with this command: `nano ~/.vnc/xstartup`
 
 ## You Need
 - [Termux App](https://github.com/termux/termux-app/releases)
