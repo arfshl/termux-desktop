@@ -12,7 +12,7 @@ apt upgrade -y -o Dpkg::Options::="--force-confold"
 apt install curl wget nano -y
 
 # Install Cinnamon
-apt install -y tigervnc termux-x11 pulseaudio dbus cinnamon nemo gnome-terminal
+apt install -y tigervnc termux-x11 pulseaudio dbus cinnamon nemo mate-terminal
 
 cat <<'EOF' > /data/data/com.termux/files/usr/bin/startdesktop-cinnamon
 #!/bin/sh
