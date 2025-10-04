@@ -1,13 +1,13 @@
 # Termux Desktop
 Termux Graphical Environment installer with preconfigured sound, VNC, and termux-x11 startup script 
 
-Script is not Intended for multiple desktop environment installation
-
 Supported Desktop Environment/Window Manager
 
 - XFCE, MATE, Openbox, Fluxbox (stable)
 - Cinnamon (A bit slow)
 - LXQt (Sometimes the icons goes missing, `papirus-icon-theme` is installed automatically but you should configure it manually)
+
+If you want to install multiple desktop environment, now you can, but if you want to use VNC instead of Termux:X11 you need to edit `~/.vnc/xstartup` with this command: `nano ~/.vnc/xstartup`
 
 ## You Need
 - [Termux App](https://github.com/termux/termux-app/releases)
