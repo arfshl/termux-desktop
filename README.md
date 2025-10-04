@@ -3,7 +3,7 @@ Termux Graphical Environment installer with preconfigured sound, VNC, and termux
 
 Supported Desktop Environment/Window Manager
 
-- XFCE, MATE, Openbox, Fluxbox (stable)
+- XFCE (Recommended for beginner), MATE, Openbox, Fluxbox (stable)
 - Cinnamon (A bit slow)
 - LXQt (Sometimes the icons goes missing, `papirus-icon-theme` is installed automatically but you should configure it manually)
 
@@ -14,7 +14,7 @@ If you want to install multiple desktop environment, now you can. But if you wan
 - [Termux:X11](https://github.com/termux/termux-x11/releases)
 - [VNC Viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android)
 ## Installation
-- XFCE
+- XFCE (Recommended for begginers)
 
       curl -O https://github.com/arfshl/termux-desktop/raw/main/xfce.sh && sh xfce.sh && rm xfce.sh
 
