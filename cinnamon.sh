@@ -12,9 +12,9 @@ apt upgrade -y -o Dpkg::Options::="--force-confold"
 apt install curl wget nano -y
 
 # Install Cinnamon
-apt install -y tigervnc termux-x11 pulseaudio dbus cinnamon nemo mate-terminal
+apt install -y tigervnc termux-x11 pulseaudio dbus cinnamon nemo gnome-terminal
 
-cat <<'EOF' > /data/data/com.termux/files/usr/bin/startx11
+cat <<'EOF' > /data/data/com.termux/files/usr/bin/startdesktop-cinnamon
 #!/bin/sh
 LD_PRELOAD=/system/lib64/libskcodec.so
 pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1
@@ -57,7 +57,7 @@ stopvnc
 startvnc' >> /data/data/com.termux/files/usr/bin/restartvnc
 chmod +x /data/data/com.termux/files/usr/bin/restartvnc
 
-echo 'To start termux-x11 session use startx11 command'
+echo 'To start termux-x11 session use startdesktop-cinnamon command'
 echo 'To start VNC use startvnc command'
 echo 'To stop VNC use stopvnc command'
 echo 'To restart VNC use restartvnc command'
