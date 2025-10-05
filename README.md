@@ -45,3 +45,12 @@ If you want to install multiple desktop environment, now you can. But if you wan
 - Install Firefox Browser, VLC Media Player, and utilities (For LXQt)
   
       apt update && apt install firefox vlc thunderbird lxqt-archiver atril lximage-qt galculator featherpad libheif webp-pixbuf-loader p7zip -y && apt clean
+
+# Credits
+
+[andronixapp/andronixorigin](https://github.com/AndronixApp/AndronixOrigin) Inspiration for making this project, VNC startup mechanism, Licensed under MIT License.
+
+[linuxmasterdroid/termux-desktops](https://github.com/LinuxDroidMaster/Termux-Desktops) Pulseaudio and Termux:X11 startup mechanism, Licensed under GPLv3.
+
+Pulseaudio fix for One UI, [Issue #19623 on termux-packages](https://github.com/termux/termux-packages/issues/19623)
+
