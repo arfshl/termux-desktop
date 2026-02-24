@@ -4,7 +4,7 @@ Termux Graphical Environment installer with preconfigured sound, VNC, and termux
 Supported Desktop Environment/Window Manager
 
 - XFCE (Recommended for beginner), MATE, Openbox, Fluxbox (stable)
-- Cinnamon (A bit slow)
+- Cinnamon and KDE Plasma (A bit slow)
 - LXQt (Sometimes the icons goes missing, `papirus-icon-theme` is installed automatically but you should configure it manually)
 
 If you want to install multiple desktop environment, now you can. But if you want to use VNC instead of Termux:X11 you need to edit `~/.vnc/xstartup` with this command: `nano ~/.vnc/xstartup`
@@ -29,6 +29,10 @@ If you want to install multiple desktop environment, now you can. But if you wan
 - Cinnamon (Heavy)
 
       curl -O https://github.com/arfshl/termux-desktop/raw/main/cinnamon.sh && sh cinnamon.sh && rm cinnamon.sh
+
+- KDE Plasma (Heavy)
+
+      curl -O https://github.com/arfshl/termux-desktop/raw/main/kde.sh && sh kde.sh && rm kde.sh
 
 - Fluxbox
 
