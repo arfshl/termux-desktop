@@ -16,31 +16,31 @@ If you want to install multiple desktop environment, now you can. But if you wan
 ## Installation
 - XFCE (Recommended for begginers)
 
-      curl -O https://github.com/arfshl/termux-desktop/raw/main/xfce.sh && sh xfce.sh && rm xfce.sh
+      curl -LO https://github.com/arfshl/termux-desktop/raw/main/xfce.sh && sh xfce.sh && rm xfce.sh
 
 - MATE
  
-      curl -O https://github.com/arfshl/termux-desktop/raw/main/mate.sh && sh mate.sh && rm mate.sh
+      curl -LO https://github.com/arfshl/termux-desktop/raw/main/mate.sh && sh mate.sh && rm mate.sh
 
 - LXQt
 
-      curl -O https://github.com/arfshl/termux-desktop/raw/main/lxqt.sh && sh lxqt.sh && rm lxqt.sh
+      curl -LO https://github.com/arfshl/termux-desktop/raw/main/lxqt.sh && sh lxqt.sh && rm lxqt.sh
 
 - Cinnamon (Heavy)
 
-      curl -O https://github.com/arfshl/termux-desktop/raw/main/cinnamon.sh && sh cinnamon.sh && rm cinnamon.sh
+      curl -LO https://github.com/arfshl/termux-desktop/raw/main/cinnamon.sh && sh cinnamon.sh && rm cinnamon.sh
 
 - KDE Plasma (Heavy)
 
-      curl -O https://github.com/arfshl/termux-desktop/raw/main/kde.sh && sh kde.sh && rm kde.sh
+      curl -LO https://github.com/arfshl/termux-desktop/raw/main/kde.sh && sh kde.sh && rm kde.sh
 
 - Fluxbox
 
-      curl -O https://github.com/arfshl/termux-desktop/raw/main/fluxbox.sh && sh fluxbox.sh && rm fluxbox.sh
+      curl -LO https://github.com/arfshl/termux-desktop/raw/main/fluxbox.sh && sh fluxbox.sh && rm fluxbox.sh
 
 - Openbox
 
-      curl -O https://github.com/arfshl/termux-desktop/raw/main/openbox.sh && sh openbox.sh && rm openbox.sh
+      curl -LO https://github.com/arfshl/termux-desktop/raw/main/openbox.sh && sh openbox.sh && rm openbox.sh
 
 - Install Firefox Browser, VLC Media Player, and utilities (Except LXQt)
   
