@@ -16,7 +16,10 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Get Repo Name
+        run: echo "REPONAME=${GITHUB_REPOSITORY##*/}" >> $GITHUB_ENV
+      
       - name: Push mirror
         run: |
-          git remote add codeberg https://arfshl:${{ secrets.CODEBERG_TOKEN }}@codeberg.org/arfshl/proot-distro-desktop.git
+          git remote add codeberg https://arfshl:${{ secrets.CODEBERG_TOKEN }}@codeberg.org/arfshl/${REPONAME}.git
           git push --mirror codeberg
