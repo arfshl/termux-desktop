@@ -13,34 +13,35 @@ If you want to install multiple desktop environment, now you can. But if you wan
 - [Termux App](https://github.com/termux/termux-app/releases)
 - [Termux:X11](https://github.com/termux/termux-x11/releases)
 - [VNC Viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android)
+
 ## Installation
 - XFCE (Recommended for begginers)
 
-      curl -LO https://github.com/arfshl/termux-desktop/raw/main/xfce.sh && sh xfce.sh && rm xfce.sh
+      curl -fsSL https://github.com/arfshl/termux-desktop/raw/main/xfce.sh | bash
 
 - MATE
  
-      curl -LO https://github.com/arfshl/termux-desktop/raw/main/mate.sh && sh mate.sh && rm mate.sh
+      curl -fsSL https://github.com/arfshl/termux-desktop/raw/main/mate.sh | bash
 
 - LXQt
 
-      curl -LO https://github.com/arfshl/termux-desktop/raw/main/lxqt.sh && sh lxqt.sh && rm lxqt.sh
+      curl -fsSL https://github.com/arfshl/termux-desktop/raw/main/lxqt.sh | bash
 
 - Cinnamon (Heavy)
 
-      curl -LO https://github.com/arfshl/termux-desktop/raw/main/cinnamon.sh && sh cinnamon.sh && rm cinnamon.sh
+      curl -fsSL https://github.com/arfshl/termux-desktop/raw/main/cinnamon.sh | bash
 
 - KDE Plasma (Heavy)
 
-      curl -LO https://github.com/arfshl/termux-desktop/raw/main/kde.sh && sh kde.sh && rm kde.sh
+      curl -fsSL https://github.com/arfshl/termux-desktop/raw/main/kde.sh | bash
 
 - Fluxbox
 
-      curl -LO https://github.com/arfshl/termux-desktop/raw/main/fluxbox.sh && sh fluxbox.sh && rm fluxbox.sh
+      curl -fsSL https://github.com/arfshl/termux-desktop/raw/main/fluxbox.sh | bash
 
 - Openbox
 
-      curl -LO https://github.com/arfshl/termux-desktop/raw/main/openbox.sh && sh openbox.sh && rm openbox.sh
+      curl -fsSL https://github.com/arfshl/termux-desktop/raw/main/openbox.sh | bash
 
 - Install Firefox Browser, VLC Media Player, and utilities (Except LXQt)
   
@@ -57,4 +58,3 @@ If you want to install multiple desktop environment, now you can. But if you wan
 [linuxmasterdroid/termux-desktops](https://github.com/LinuxDroidMaster/Termux-Desktops) Pulseaudio and Termux:X11 startup mechanism, Licensed under GPLv3.
 
 Pulseaudio fix for One UI, [Issue #19623 on termux-packages](https://github.com/termux/termux-packages/issues/19623)
-
